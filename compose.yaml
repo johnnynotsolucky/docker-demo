@@ -173,6 +173,8 @@ services:
       MH_STORAGE: maildir
       MH_MAILDIR_PATH: /home/mailhog/maildir
     restart: unless-stopped
+    ports:
+      - "8025:8025"
 
 volumes:
   cache: {}
